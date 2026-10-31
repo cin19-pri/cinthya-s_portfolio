@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white font-sans text-silver-700 leading-[1.5] antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply leading-[1.2] text-silver-900;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply border border-white/70 bg-white/60 shadow-glass backdrop-blur-xl;
+  }
+}
